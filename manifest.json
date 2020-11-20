@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "Best Buy Poller",
+	"version": "0.0.1",
+	"description": "polls bb's add to cart and focuses the tab if the item is available",
+	"icons": {
+		"16": "best-buy-16.png",
+		"128": "best-buy-128.png"
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.bestbuy.com/*"
+			],
+			"js": [
+				"poller.js"
+			]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup/popup.html"
+	},
+	"permissions": [
+		"tabs",
+		"storage",
+		"notifications"
+	],
+	"web_accessible_resources": [
+		"popup/*"
+	]
+}
