@@ -1,11 +1,11 @@
 # Installation
 
-1. clone this repo
-2. go to chrome://extensions
-3. enable the developer mode toggle
-4. drag this entire directory onto the chrome://extensions page
-5. click the best buy logo in your extension list
-6. pick your polling rate, and your desired SKU (it defaults to the RTX 3080 FE)and hit 'start checking'
+1. Clone this repo
+2. Go to chrome://extensions
+3. Enable the developer mode toggle
+4. Drag this entire directory onto the chrome://extensions page
+5. Click the best buy logo in your extension list
+6. Pick your polling rate, and your desired SKU (it defaults to the RTX 3080 FE) and hit 'start checking'
 
 # Note
 
