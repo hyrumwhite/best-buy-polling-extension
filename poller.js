@@ -33,11 +33,12 @@ const checkCart = async (sku) => {
       chrome.runtime.sendMessage({ checkResult: "success" }, (response) => {});
     }
   } else {
-    if (json.errorSummary) {
-      message = json.errorSummary.message;
-      if (
-        message !==
-        "This item is currently unavailable for online purchase. The item was not added to your cart."
+		if (json.errorSummary) {
+			message = json.errorSummary.message;
+			if (
+				message !==
+				"This item is currently unavailable for online purchase. The item was not added to your cart."
+				&& message !== "Sorry, there was a problem adding the item to your cart. Please try again."
       ) {
         chrome.runtime.sendMessage(
           { checkResult: "success" },
